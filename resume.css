@@ -1,0 +1,16 @@
+body {
+  font-family: helvetica;
+  background-color: #cbe6d1;
+}
+
+.work-period {
+  font-style: italic;
+}
+
+.company .company-title {
+  margin-bottom: 0;
+}
+
+.company a {
+  color: red;
+}
