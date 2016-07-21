@@ -1,16 +1,24 @@
+$('.show-skills').on('click', function () {
+  $('.skills').show();
+  $('.show-skills').hide();
+});
+
 // Shows today's date
 var today = new Date();
 var todaysDate = today.getDate();
 var todaysDayOfWeek = today.getDay();
 var thursday = 4;
-document.write('The time right now is: ' + today);
-document.write("<br>");
-today.setDate(todaysDate - 1);
-document.write(`This time yesterday was: ${today}</span><br>`);
+var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+var dateInfo = $('.date-info');
+dateInfo.append('The time right now is: ' + today);
+dateInfo.append("<br>");
+dateInfo.append(today.setDate(todaysDate - 1));
+dateInfo.append(`This time yesterday was: ${today}</span><br>`);
 if (todaysDayOfWeek == thursday) {
-  document.write("Today is Thursday, time to learn to code!");
+  dateInfo.append("Today is Thursday, time to learn to code!");
 } else if (todaysDayOfWeek > thursday) {
-  document.write("You missed this week's class!");
+  dateInfo.append("You missed this week's class!");
 } else {
-  document.write("Come to class this Thursday!");
+  dateInfo.append("Come to class this Thursday!");
 }

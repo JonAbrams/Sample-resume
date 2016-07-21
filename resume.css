@@ -18,3 +18,11 @@ body {
 .yesterday {
   color: red;
 }
+
+.skills {
+  display: none;
+}
+
+.show-skills {
+  margin-top: 10px;
+}

@@ -2,11 +2,9 @@
   <head>
     <title>Jon Abrams' Resume</title>
     <link rel="stylesheet" href="resume.css"></link>
+    <script src="jquery-3.1.0.js"></script>
   </head>
   <body>
-    <p>
-      <script src="main.js"></script>
-    </p>
     <img src="photo.jpg">
     <h1>Jon Abrams</h1>
     <h2>Software Engineer</h2>
@@ -14,12 +12,15 @@
       377 N Eldorado St<br>
       San Mateo, CA
     </address>
-    <h3>Skills</h3>
-    <ul>
-      <li>HTML</li>
-      <li>Atom</li>
-      <li>Git</li>
-    </ul>
+    <button class="show-skills">Show Skills</button>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>Atom</li>
+        <li>Git</li>
+      </ul>
+    </div>
     <h3>Work History</h3>
     <div class="company">
       <h4 class="company-title">
@@ -41,5 +42,8 @@
 
     <h3>External Links</h3>
     <a href="https://blog.jonabrams.com/">My Website</a>
+    <p class="date-info"></p>
+
+    <script src="main.js"></script>
   </body>
 </html>
